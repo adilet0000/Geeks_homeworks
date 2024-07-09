@@ -30,16 +30,8 @@ function toFivePointSistem(array) {
         } else {
             return "Таких оценок мы преобразовать не можем."
         };
-    };
-    for(let i = 0; i < array.length; i++) {
         console.log(`${array[i]} баллов это ${newArr[i]}`);
     };
     return "Преобразование завершено!"
 };
 console.log(toFivePointSistem(marks));
-
-// 40 баллов это 2
-// 55 баллов это 3
-// 22 баллов это 2
-// 89 баллов это 5
-// … и т.д. 
