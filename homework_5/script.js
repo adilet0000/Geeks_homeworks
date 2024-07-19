@@ -21,7 +21,7 @@ function bodyMassIndex(height, weight) {
 function check(ix) {
     if (ix < 16) {
         return "Значительный дефицит массы тела";
-    } else if (ix >= 16 && ix < 18.5 && ix < 1) {
+    } else if (ix >= 16 && ix < 18.5) {
         return "Дефицит массы тела";
     } else if (ix >= 18.5 && ix < 25) {
         return "Норма";
