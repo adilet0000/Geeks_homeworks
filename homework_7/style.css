@@ -1,0 +1,70 @@
+body {
+    background-image: url(zvezdnoe_nebo.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: Arial, Helvetica, sans-serif;
+    color: whitesmoke;
+}
+
+hr {
+    border-width: 0.5rem;
+    border-color: rgb(255, 255, 255);
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 3rem;
+}
+
+.title {
+    font-weight: 300;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.line {
+    border-top: solid 2px;
+    width: 50px;
+}
+
+.text {
+    font-size: medium;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.btn {
+    width: 250px;
+    height: 40px;
+    border-radius: 8px;
+    background-color: rgb(55, 169, 189);
+    color: whitesmoke;
+}
+
+.random-nums {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+}
+
+.num {
+    padding: 40px;
+    margin: 10px 15px;
+    border: solid 2px;
+    border-color: whitesmoke;
+    border-radius: 100%;
+    background-color: rgba(51, 52, 53, 0.3);
+    animation: 1.5s show ease;
+}
+
+@keyframes show {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+  
