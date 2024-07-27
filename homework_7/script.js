@@ -2,9 +2,11 @@ const $btn = document.querySelector(".btn");
 const $container = document.querySelector(".random-nums");
 
 $btn.addEventListener("click", () => renderNumbers());
-$btn.addEventListener("dblclick", () => location.reload());
+// $btn.addEventListener("dblclick", () => location.reload()); - костыль
+// чтобы очистить кружки надо было написать  внутри функции renderNumbers вот так: $container.innerHTML = ""; - верное решение
 
 function renderNumbers() {
+    $container.innerHTML = "";
     for (let i = 0; i < 6; i++) {
         renderNum();
     };
